@@ -34,12 +34,12 @@ class Citation(BaseModel):
         ...,
         description="Study name and author from the reference material loaded in Slot [4]. "
                     "Must match a citation in the psychology reference corpus. "
-                    "Example: 'Cowan 2010 — The Magical Mystery Four'"
+                    "Example: 'Cowan 2010: The Magical Mystery Four'"
     )
     finding: str = Field(
         ...,
-        description="The specific finding being cited. Not the full abstract — "
-                    "the particular result relevant to this violation. "
+        description="The specific finding being cited. Not the full abstract, "
+                    "but the particular result relevant to this violation. "
                     "Example: 'Working memory holds 3-5 chunks, not Miller's 7+/-2'"
     )
     relevance: str = Field(
@@ -84,7 +84,7 @@ class Violation(BaseModel):
     fix: str = Field(
         ...,
         description="Design-system-specific fix prescription. Must match the detected framework. "
-                    "Example (Tailwind): 'Consolidate to 2 font families in tailwind.config.js — "
+                    "Example (Tailwind): 'Consolidate to 2 font families in tailwind.config.js. "
                     "fontFamily: { sans: [\"Inter\"], display: [\"Playfair Display\"] }'"
     )
 ```
@@ -95,7 +95,7 @@ class Violation(BaseModel):
 class FixPrescription(BaseModel):
     description: str = Field(
         ...,
-        description="What to fix and how. Specific and actionable — not 'improve the layout' "
+        description="What to fix and how. Specific and actionable, not 'improve the layout' "
                     "but 'reduce above-fold content blocks from 9 to 3 by moving feature grid "
                     "and testimonials below the fold'"
     )
@@ -152,7 +152,7 @@ class LayerEvaluation(BaseModel):
         ...,
         description="Chain-of-thought reasoning for this score. What was observed, "
                     "what it means for this layer, how the score was determined. "
-                    "This is the CoT trace — show your work."
+                    "This is the CoT trace: show your work."
     )
     violations: List[Violation] = Field(
         ...,
@@ -162,7 +162,7 @@ class LayerEvaluation(BaseModel):
     strengths: List[str] = Field(
         ...,
         description="Specific strengths observed for this layer, with evidence. "
-                    "Not filler — genuine positive observations. "
+                    "Not filler: genuine positive observations. "
                     "Example: 'Consistent 8px spacing scale across all section paddings'"
     )
     fixes: List[FixPrescription] = Field(

@@ -1,6 +1,6 @@
 # Changelog
 
-## v3.5 — 2026-04-02
+## v3.5 (2026-04-02)
 
 ### Added
 - Pre-verbal arousal formalized as the unified objective of the 5-layer stack

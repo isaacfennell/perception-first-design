@@ -4,7 +4,7 @@ These rules are MANDATORY. They override the LLM's judgment. They are enforced b
 
 ## Dependency Stack Caps (Hard Enforcement)
 
-Lower layers are load-bearing. If they fail, upper layers cannot be fully trusted — they are built on a broken foundation. These caps are non-negotiable.
+Lower layers are load-bearing. If they fail, upper layers cannot be fully trusted. They are built on a broken foundation. These caps are non-negotiable.
 
 - If Foundation score < 40: L1 capped at 50, L2 capped at 45, L3 capped at 40, L4 capped at 35
 - If L1 score < 40: L2 capped at 50, L3 capped at 45, L4 capped at 40
@@ -17,7 +17,7 @@ When a cap is applied, note it in the Dependency Notes section. State the origin
 
 - Scores MUST use the full 0-100 range. A score of 20 is appropriate for sites with severe violations. A score of 50 is mediocre, not bad. A score of 75 is genuinely good.
 - Do NOT cluster all scores in the 60-80 range. If Foundation is strong (>70) but L4 is weak (<40), that spread is expected and correct. PFD's dependency stack naturally produces score spread.
-- If all 5 layer scores are within 15 points of each other, re-examine — uniform scores are a red flag for lazy evaluation. Different layers measure different things; uniform quality across all 5 is rare.
+- If all 5 layer scores are within 15 points of each other, re-examine: uniform scores are a red flag for lazy evaluation. Different layers measure different things; uniform quality across all 5 is rare.
 - Calibrate against the anchor examples loaded in Slot [7]. If you are scoring a site similarly to the "good" anchor example, your scores should be in the 65-75 range, not 80+. If you are scoring similarly to the "mediocre" anchor, you should be in the 45-55 range.
 
 ## Overall Score Calculation
@@ -33,9 +33,9 @@ Round to the nearest integer. Apply this formula AFTER dependency caps have been
 ## Citation Rules
 
 - Only cite studies from the psychology reference material loaded in this evaluation context
-- Every WHY explanation in a violation must trace to a specific citation — study name, finding, and relevance to this specific violation
-- If you cannot find a citation in the loaded reference material for a claim, state "practitioner observation" — do NOT fabricate a study name, author, or date
-- Do not cite studies you know about but that are not in the loaded corpus — consistency with the reference material is more important than comprehensiveness
+- Every WHY explanation in a violation must trace to a specific citation: study name, finding, and relevance to this specific violation
+- If you cannot find a citation in the loaded reference material for a claim, state "practitioner observation." Do NOT fabricate a study name, author, or date
+- Do not cite studies you know about but that are not in the loaded corpus. Consistency with the reference material is more important than comprehensiveness
 
 ## Deviation Handling
 
@@ -52,4 +52,4 @@ PFD removes perception barriers to genuine value. It does NOT create perception 
 - **Alignment test:** Do user goals and business goals converge? If the design optimizes for business outcomes at the expense of user outcomes, it fails Alignment.
 - **Sincerity test:** Does what the user sees match what they will receive? If the design creates expectations that the product or service cannot fulfill, it fails Sincerity.
 - **Golden Rule test:** Would you, as a designer, be comfortable experiencing this design as a user? If not, it fails the Golden Rule.
-- **Fluency trap detection:** If L2 scores high (polished, fluent, visually cohesive) but the site contains unverifiable claims, misleading imagery, or hidden costs, flag as a potential fluency trap. Beautiful design making false promises is MORE dangerous than ugly design making false promises — because fluency increases believability (Reber & Schwarz 1999).
+- **Fluency trap detection:** If L2 scores high (polished, fluent, visually cohesive) but the site contains unverifiable claims, misleading imagery, or hidden costs, flag as a potential fluency trap. Beautiful design making false promises is MORE dangerous than ugly design making false promises, because fluency increases believability (Reber & Schwarz 1999).
