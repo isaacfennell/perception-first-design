@@ -1,13 +1,12 @@
-# PFD Accumulated Learnings
+# PFD Accumulated Learnings — superseded by sharded architecture (v0.5+)
 
-Promoted insights from `insights-log.md` that change how PFD evaluates designs in your domain.
-Load this file when applying PFD, especially learnings relevant to the current context.
+This file is retained as a pointer for backward compatibility with external links.
 
-Each learning should include:
-- **Date** identified
-- **Source** (which evaluation surfaced it)
-- **Insight** (the generalizable principle, not the specific finding)
+**Learnings now live as atom files under [`learnings/`](learnings/).** Query via:
 
----
+- [`learnings/_index.md`](learnings/_index.md) — human-readable, grouped by layer, sorted by date
+- [`learnings/_search.json`](learnings/_search.json) — machine-readable, flat array for programmatic filters
 
-<!-- Your accumulated learnings go here. See insights-log.md for raw entries. -->
+See `SKILL.md` § Accumulated Learnings for the query sequence (read the index first, drill into specific atom files on demand).
+
+**Why the change:** lazy-load via lightweight index scales to 1000+ learnings without the per-activation cost blowup of the monolithic format. See `Aurochs/docs/plans/2026-04-21-pfd-sharded-migration-plan.md` for the full rationale.

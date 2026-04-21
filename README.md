@@ -13,7 +13,7 @@ psychology. Tells you which perceptual layer is failing, in what
 order to fix it, and why the fix works. Before anyone touches a
 pixel.**
 
-82 peer-reviewed citations. 15 years applied. Open framework.
+~100 peer-reviewed citations. 15 years applied. Open framework.
 
 Created by Stefan Kovalik / [Aurochs](https://aurochs.agency)
 
@@ -124,7 +124,7 @@ Fix bottom-up. Upstream failures block everything downstream.
 | **Perception Bias (L3)** | Users autopilot, rationalize after | You're designing for what users SAY instead of what they DO. The gap is where conversions die. |
 | **Decision Architecture (L4)** | Structure shapes choice | The trail is broken. Interested visitors can't find the path to action. |
 
-Full framework (700+ lines, 82 citations):
+Full framework (700+ lines, ~100 citations):
 [framework/PERCEPTION-FIRST-DESIGN.md](framework/PERCEPTION-FIRST-DESIGN.md)
 
 ---
@@ -184,7 +184,7 @@ five filters.
 ## What's in the Repo
 
 ```
-framework/           The complete PFD framework (v3.5, 82 citations)
+framework/           The complete PFD framework (v3.6, ~100 citations)
   PERCEPTION-FIRST-DESIGN.md
   ADHD-CURB-CUT.md   ADHD and autism as diagnostic instruments, not disclaimers
 
@@ -245,7 +245,7 @@ The framework is the reference; the book is the story.
 
 ```
 Kovalik, S. (2024-2026). Perception-First Design: A cognitive
-psychology framework for web design. Version 3.5. CC BY-SA 4.0.
+psychology framework for web design. Version 3.6. CC BY-SA 4.0.
 https://github.com/skovalik/perception-first-design
 ```
 
@@ -253,9 +253,16 @@ Machine-readable: [CITATION.cff](CITATION.cff)
 
 ## License
 
-CC BY-SA 4.0. Use, adapt, and build on PFD for any purpose,
-including commercial, as long as you credit the source and share
-adaptations under the same license.
+Dual license. Framework text, learnings, corpus content, and
+documentation: **CC BY-SA 4.0**. Skill code, loaders, and scripts
+under `skill/`: **MIT**. See
+[skill/LICENSE](skill/LICENSE) (MIT) and
+[skill/LICENSE-CONTENT](skill/LICENSE-CONTENT) (CC BY-SA 4.0).
+
+Practice exemption: applying PFD in practice — running analyses,
+producing recommendations, delivering client work — does not
+create a derivative work. Only redistributions or modifications
+of the framework text trigger ShareAlike.
 
 "Perception-First Design" is a trademark (Serial 99686343). The
 methodology is open; the name requires attribution.
