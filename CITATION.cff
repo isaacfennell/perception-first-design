@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use Perception-First Design in your work, please cite it."
 title: "Perception-First Design"
-version: "3.5"
-date-released: "2026-04-02"
+version: "3.6"
+date-released: "2026-04-20"
 license: "CC-BY-SA-4.0"
 type: "dataset"
 authors:
@@ -16,7 +16,8 @@ abstract: >
   A five-layer web design methodology grounded in cognitive psychology. Applies
   predictive processing, cognitive load theory, processing fluency, perception
   bias optimization, and decision architecture to how people perceive, process,
-  and decide. 82 peer-reviewed citations from 3 non-overlapping literatures.
+  and decide. ~100 peer-reviewed citations from multiple non-overlapping literatures,
+  including international research (Kansei engineering, Gestalt psychology, neuroaesthetics).
   15 years of applied practice. Includes a Claude Code plugin for automated
   evaluation and a YAML heuristic rule corpus.
 keywords:
